@@ -20,7 +20,7 @@ const Home = () => {
           <div className="flex flex-wrap">
             <div className="p-2 w-full">
               <h1 className="text-2xl font-bold hover:text-gray-500">
-                Login to read posts
+                No Post Available or You might not be logged in!
               </h1>
             </div>
           </div>
@@ -34,7 +34,7 @@ const Home = () => {
       <Container>
         <div className="flex flex-wrap">
           {posts.map((post) => (
-            <div key={post.$id} className="p-2 w-1/4">
+            <div key={post.$id} className="p-2 w-full max-w-80 sm:w-1/2 lg:w-1/4">
               <PostCard {...post} />
             </div>
           ))}
